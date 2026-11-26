@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omer Abdelwahab · AI projects and research</title>
+  <meta name="description" content="I study AI and build tools to solve practical problems.">
+  <link rel="canonical" href="https://omer-wail.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omer Abdelwahab · AI projects and research">
+  <meta property="og:description" content="I study AI and build tools to solve practical problems.">
+  <meta property="og:url" content="https://omer-wail.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf9f5;
+      --ink: #222721;
+      --muted: #535d54;
+      --accent: #305e47;
+      --rule: #ced3c9;
+      --serif: "DM Serif Text", Georgia, serif;
+      --sans: "DM Sans", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.6 var(--sans);
+    }
+    .page { width: min(68rem, 89%); margin-inline: auto; }
+    a { color: var(--accent); text-underline-offset: .24em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    mark { background: #ffeb38; color: #212518; padding: .08em .22em; }
+    .masthead, .contacts, .action, .now, nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+    }
+    .masthead {
+      justify-content: space-between;
+      padding-block: 1.2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .initials { font: 1.5rem var(--serif); color: var(--accent); }
+    nav a { color: var(--ink); font-size: .9rem; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .hero { padding-block: clamp(3rem, 8vw, 7rem) 2rem; }
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; }
+    h1 { font-size: clamp(2.8rem, 8vw, 6.5rem); line-height: 1.04; letter-spacing: -.05em; }
+    .intro { margin-top: 1rem; font-size: clamp(1.15rem, 2.3vw, 1.55rem); }
+    .action { margin-block: 1.8rem 2.8rem; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .65rem 1.15rem;
+      border-radius: .35rem;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .button:hover { text-decoration: underline; }
+    .now { gap: .5rem 1rem; font-size: .94rem; }
+    .label, dt {
+      color: var(--accent);
+      font-size: .76rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    section { padding-block: 2.2rem 3rem; border-top: 1px solid var(--rule); }
+    h2 { font-size: 2rem; line-height: 1.2; margin-bottom: 1.5rem; }
+    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem; }
+    article { border-top: 3px solid var(--accent); padding-top: 1rem; }
+    .meta, .date { color: var(--muted); font-size: .9rem; }
+    h3 { font-size: clamp(1.6rem, 3vw, 2.15rem); line-height: 1.2; margin-block: .45rem 1.35rem; }
+    dt { margin-top: 1rem; }
+    dd { margin-top: .25rem; }
+    article a { display: inline-block; margin-top: 1.2rem; font-weight: 600; }
+    .work { list-style: none; padding: 0; margin: 0; }
+    .work li { display: grid; grid-template-columns: 11rem 1fr; gap: .3rem 1rem; align-items: baseline; }
+    .work li + li { border-top: 1px solid var(--rule); margin-top: .9rem; padding-top: .9rem; }
+    .about { max-width: 65ch; font-size: 1.08rem; }
+    .contacts { margin-top: 1.4rem; overflow-wrap: anywhere; }
+    @media (max-width: 42rem) {
+      .projects, .work li { grid-template-columns: 1fr; }
+      nav { gap: 1rem; }
+      .action { margin-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <span class="initials" aria-hidden="true">OA</span>
+      <nav aria-label="Page sections">
+        <a href="#featured">Featured</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Omer Abdelwahab</h1>
+        <p class="intro">I study AI and build tools to solve practical problems.</p>
+        <div class="action">
+          <a class="button" href="mailto:omer.abdelwahab07@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <mark>[What would you like to hear from an Alberta AI team about?]</mark>
+        </div>
+        <p class="now"><span class="label">Now</span> I’m building the backend for Cohort with Python and FastAPI.</p>
+      </div>
+
+      <section id="featured" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">Featured</h2>
+        <div class="projects">
+          <article>
+            <p class="meta">NLP research · <time datetime="2026">2026</time></p>
+            <h3>When is an idiom literal?</h3>
+            <dl>
+              <dt>Problem</dt>
+              <dd>Can a model use the surrounding English text to tell whether a phrase carries its literal or idiomatic meaning?</dd>
+              <dt>Decision</dt>
+              <dd>I fine-tuned BERT on the MAGPIE dataset. Literal and idiomatic examples appeared at different rates, so I used a weighted loss to account for the imbalance.</dd>
+              <dt>Result</dt>
+              <dd>The model reached 83% accuracy and a weighted F1 of 0.83 on 4,840 held-out examples. I then examined the misclassifications to understand where the model fell short.</dd>
+            </dl>
+            <a href="https://drive.google.com/file/d/1BHR1SevF7VL2uvq2bAHweNbRI8XFWgNo/view?usp=sharing">Read the idiom study <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article>
+            <p class="meta">Assistive technology · natHacks 2026</p>
+            <h3>Clarté</h3>
+            <dl>
+              <dt>Problem</dt>
+              <dd>How can someone with dysarthria and a motor disability select an option in a speech assist app without a mouse or touchscreen?</dd>
+              <dt>Decision</dt>
+              <dd>I simplified the interface to a 2×4 grid. The large targets require less precision from webcam eye tracking.</dd>
+              <dt>Result</dt>
+              <dd>I built a prototype that lets users select on-screen options with their eyes.</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" aria-labelledby="work-heading">
+        <h2 id="work-heading">Work</h2>
+        <ul class="work">
+          <!-- ADD NEW WORK HERE: copy one item, paste it at the top, edit it -->
+          <li>
+            <span class="date"><time datetime="2026-10">October 2026</time> – present</span>
+            <span><strong>Cohort</strong> · An app for students to stay organized and connect with each other.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p class="about">I’m interested in how AI can help answer scientific questions. Debate taught me to ask what evidence supports a claim, even when it sounds convincing. I bring that habit to AI by looking at where a model succeeds, where it fails, and why.</p>
+        <div class="contacts" aria-label="Contact links">
+          <a href="mailto:omer.abdelwahab07@gmail.com">omer.abdelwahab07@gmail.com</a>
+          <a rel="me" href="https://www.linkedin.com/in/omer-abdelwahab/">LinkedIn</a>
+          <a rel="me" href="https://github.com/Omer-Wail">GitHub</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
